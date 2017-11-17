@@ -6,6 +6,9 @@ import com.shineoxygen.study.model.Pear;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.BiFunction;
+import java.util.function.DoubleFunction;
+import java.util.function.IntPredicate;
 
 public class LambdaTest {
     private static List<Apple> inventory = Arrays.asList(new Apple(80, "green"),
@@ -13,6 +16,7 @@ public class LambdaTest {
             new Apple(120, "red"));
 
     public static void main(String args[]) {
+
         //使用内部类过滤，不够简洁，模板代码太多
         List<Apple> apples = findApplesByColor(inventory, (Apple apple) -> {
             return apple.getColor() == "green";
@@ -21,6 +25,7 @@ public class LambdaTest {
         printApples(apples, (Apple apple) -> {
             System.out.println(apple);
         });
+
 
         magicPearByApple(inventory, (Apple apple) -> {
             Pear pear = new Pear();
