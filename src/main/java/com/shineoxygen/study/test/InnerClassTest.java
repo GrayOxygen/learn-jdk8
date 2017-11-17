@@ -7,6 +7,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * 演示内部解决需求时，有哪些问题：
+ * <p>
+ * 样板代码过多，可读性差
+ */
 public class InnerClassTest {
     private static List<Apple> inventory = Arrays.asList(new Apple(80, "green"),
             new Apple(155, "green"),

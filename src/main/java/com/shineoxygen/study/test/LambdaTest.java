@@ -10,6 +10,9 @@ import java.util.function.BiFunction;
 import java.util.function.DoubleFunction;
 import java.util.function.IntPredicate;
 
+/**
+ * 演示lambda，并模拟jdk8提供的Predicate/Function/Consumer等函数式接口
+ */
 public class LambdaTest {
     private static List<Apple> inventory = Arrays.asList(new Apple(80, "green"),
             new Apple(155, "green"),
